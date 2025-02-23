@@ -4,9 +4,7 @@ version = "0.1.0"
 description = "Meu projeto FletAV"
 authors = ["Seu Nome <seuemail@example.com>"]
 readme = "README.md"
-
-# Adicione esta seção para garantir que o código-fonte está sendo encontrado
-packages = [{ include = "fletav" }]  # Substitua "fletav" pelo nome correto do diretório do projeto
+packages = [{ include = "src" }]  # Substitua "fletav" pelo nome correto do diretório do projeto
 
 [tool.poetry.dependencies]
 python = "^3.12"
