@@ -1,15 +1,14 @@
-[project]
-name = "flet"
+[tool.poetry]
+name = "flet_project"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Sergio Semprebom",email = "sergiosemprebom@gmail.com"}
-]
+description = "Projeto usando Flet"
+authors = ["Sergio Semprebom <sergiosemprebom@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
+packages = [{include = "src"}]  # Define que os pacotes estão na pasta "src"
 
+[tool.poetry.dependencies]
+python = ">=3.13"  # Define a versão do Python compatível
+flet = "^0.27.1"  # Adiciona o pacote flet como dependência
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
