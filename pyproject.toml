@@ -8,7 +8,7 @@ packages = [{include = "src"}]  # Define que os pacotes estão na pasta "src"
 
 [tool.poetry.dependencies]
 python = ">=3.13"  # Define a versão do Python compatível
-flet = "^0.27.1"  # Adiciona o pacote flet como dependência
+flet = "^0.27.2"  # Adiciona o pacote flet como dependência
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
