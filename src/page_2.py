@@ -21,8 +21,9 @@ def main(page: ft.Page):
     #page.padding = ft.padding.only(top=20, left=10, right=100, bottom=50) # será usado no curso
     page.padding = 20
     page.spacing = 100
-    page.title = 'Page App' # titulo da 
-
+    page.title = 'Page App' # titulo da Pagina
+    page.window_always_on_top = True # sempre no topo
+    page.window_title_bar = True # barra de titulo
 
     # alinhamento
     page.add(
