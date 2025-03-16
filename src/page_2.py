@@ -6,7 +6,7 @@ def main(page: ft.Page):
     # aletrando fundo da pagina
     page.bgcolor = 'green' # alterando a cor d fundo d pagina com um variavel
     page.bgcolor = '#B12B12' # alterando a cor d fundo d pagina com um variavel
-    page.bgcolor = ft.Colors.WHITE # alterando a cor d fundo padrao
+    page.bgcolor = ft.Colors.BLUE # alterando a cor d fundo padrao
     
     #Formas de alinhamento na horizontal o de texto
     page.horizontal_alignment = ft.CrossAxisAlignment.STRETCH # alinhamento horizontal    
@@ -22,8 +22,11 @@ def main(page: ft.Page):
     page.padding = 20
     page.spacing = 100
     page.title = 'Page App' # titulo da Pagina
-    page.window_always_on_top = True # sempre no topo
-    page.window_title_bar = True # barra de titulo
+    page.window.always_on_bottom= True # sempre no topo, sobrepondo
+    page.window.title_bar_hidden = True # titulo da janela oculto
+    page.windows_frameless = False # sem bordas
+
+   
 
     # alinhamento
     page.add(
